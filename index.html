@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Anime Cyber</title>
   <style>
-body 
+body <div class="frase-flotante">"La ciudad no duerme, pero sí resiste."</div>
 }<style>
   body {
     background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/07/best-cyberpunk-anime-ranked.jpg');
@@ -17,6 +17,22 @@ body
     padding: 2em;
   }
 </style>
+.frase-flotante {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  color: #ff00cc;
+  font-size: 1.5em;
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 0 5px #00ffff;
+  animation: parpadeo 3s infinite;
+  z-index: 1;
+}
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
 
 h1 {
   font-size: 3em;
