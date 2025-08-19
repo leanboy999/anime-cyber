@@ -4,22 +4,37 @@
   <meta charset="UTF-8">
   <title>Anime Cyber</title>
   <style>
-    body {
-      background-color: #000;
-      color: #00ffff;
-      font-family: monospace;
-      text-align: center;
-      padding-top: 20vh;
-    }
-    h1 {
-      font-size: 3em;
-      text-shadow: 0 0 10px #00ffff;
-    }
-    p {
-      font-size: 1.2em;
-      opacity: 0.8;
-    }
-  </style>
+body {
+  background-color: #D891EF;
+  color: #ff00cc;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  padding-top: 20vh;
+  animation: backgroundPulse 5s infinite;
+}
+h1 {
+  font-size: 3em;
+  text-shadow: 0 0 10px #ff00cc, 0 0 20px #00ffff;
+  animation: glitch 1s infinite;
+}
+p {
+  font-size: 1.2em;
+  opacity: 0.9;
+  margin-top: 20px;
+}
+@keyframes glitch {
+  0% { transform: skew(0deg); }
+  25% { transform: skew(-2deg); }
+  50% { transform: skew(2deg); }
+  75% { transform: skew(-1deg); }
+  100% { transform: skew(0deg); }
+}
+@keyframes backgroundPulse {
+  0% { background-color: #0a0a0a; }
+  50% { background-color: #111; }
+  100% { background-color: #0a0a0a; }
+}
+</style>
 </head>
 <body>
   <h1>Anime Cyber</h1>
